@@ -4,15 +4,43 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pagina de Cielo</title>
+    <title>Skitty</title>
 </head>
 <body>
-    <img src="pokedex.png" alt="pokedex" width="400px">
-    <input type="text" placeholder="pikachu" id="pokeName"
-    class="placeholder">
-    <img src = "pokeball.png"alt="Pokebola" id="pokeImg" width="250px">
+    <style>
+        body{
+            background-color: pink;
+        }
+        .pokeimg1{
+            position: absolute;
+        }
+        .pokeImg{
+            width: 205px;
+            height: 205px;
+            position: absolute;
+            top: 240px;
+            left: 130px;
+            mix-blend-mode: multiply;
+        }
+        button{
+            width: 50px;
+            height: 50px;
+            background-color: plum;
+            border-color: purple;
+            border-radius: 50px;
+            position: absolute;
+            left: 70px;
+            top: 420px;
+            opacity: 20px;
+        }
 
-    <div id="pokename" class="pokeimg1" style="left: 300px; top:300px;font-size:15px;"></div>
+    </style>
+    <img src="pokedex.png" alt="pokedex" width="750px">
+    <input type="text" placeholder="Skitty" id="pokeName"
+    class="placeholder">
+    <img src = "pokeball.png"alt="Pokebola" id="pokeImg" width="250px" class="pokeImg">
+
+    <div id="pokename" class="pokeimg1" style="left: 300px; top:300px;font-size:15px;">Skitty</div>
     <div id="pokeHe" class="pokeimg1" style="left: 300px; top:320px;font-size:15px;"></div>
     <div id="pokeWe" class="pokeimg1" style="left: 300px; top:340px;font-size:15px;"></div>
     <div id="poketype" class="pokeimg1" style="left: 300px; top:300px;font-size:15px;"></div>
@@ -91,11 +119,11 @@ element10.innerHTML=`Move 4: ${data.moves[3].move.name}`;
 const miCanvas=document.getElementById("miCanvas").getContext("2d"); 
 if(window.miCanva != undefined)
 window.miCanva.destroy();
-window.miCanva=new Chart (miCanvas, {}
-,type: "bar");
-data: {}
+window.miCanva=new Chart (miCanvas, {
+type: "bar",
+data: {
     labels: ["HP", "Attack", "Defense", "Special-A", "Special-D", "Speed"],
-datasets;[
+datasets:[
 {
 
 
